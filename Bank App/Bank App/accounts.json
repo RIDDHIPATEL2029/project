@@ -1,0 +1,15 @@
+{
+    "itechdp": {
+        "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+        "account_type": "Savings",
+        "balance": 600.0,
+        "transactions": [
+            "2025-03-20 01:08:54.558905: Deposited \u00a31000.00",
+            "2025-03-20 01:09:04.335609: Withdrew \u00a3300.00",
+            "2025-03-20 01:13:16.745720: Withdrew \u00a3100.00"
+        ],
+        "overdraft_limit": 0,
+        "monthly_spending": 400.0,
+        "spending_limit": null
+    }
+}

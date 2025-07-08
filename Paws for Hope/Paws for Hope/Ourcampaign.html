@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws of Hope - Our Campaign</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ff8c00;
+            overflow-x: hidden;
+        }
+        .header-container {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        .footer {
+            background-color: #E5E8E8;
+            color: black;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            clear: both;
+        }
+        .footer-icons {
+            margin-top: 20px;
+        }
+        .footer-icons a img {
+            height: 50px;
+        }
+        .footer-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: white;
+        }
+        .footer-icons a:hover {
+            color: skyblue;
+        }
+        .footer-description {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            padding: 10px 0;
+            animation: fadeIn 1s ease;
+            flex-grow: 1;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover {
+            color: skyblue;
+        }
+        .logo img {
+            width: 150px;
+        }
+        .donate-button a {
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .donate-button a:hover {
+            background-color: black;
+        }
+        .campaign-content {
+            margin-top: 100px;
+            padding: 20px;
+            max-width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            .header {
+                flex-direction: column;
+            }
+            .logo img {
+                margin-bottom: 10px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            .campaign-content {
+                margin-top: 80px;
+                max-width: 90%;
+            }
+        }
+        .slideshow-container {
+            max-width: 50%;
+            float: right;
+            margin-top: 10px;
+            margin-right: 50px;
+        }
+        .slides {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        .slide {
+            min-width: 100%;
+            display: none;
+        }
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: auto;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+            margin-right: 50px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .animated-box-container {
+            max-width: 60%;
+            margin: 0 auto;
+            padding: 20px;
+            overflow-y: auto;
+            max-height: 70vh;
+        }
+        .animated-box {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .dog-info {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <nav class="header">
+            <div class="logo">
+                <img src="images/logo.png" alt="Paws of Hope Logo">
+            </div>
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+                <li><a href="Ourcampaign.html">Our Campaign</a></li>
+                <li><a href="Adopt.html">Pets to Adopt</a></li>
+                <li><a href="Contactus.html">Contact Us</a></li>
+                <li class="donate-button"><a href="Donatepage.html">Donate Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="slideshow-container">
+        <div class="slides">
+            <div class="slide">
+                <img src="images/slide1.1.jpg" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="images/slide2.2.jpg" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="images/slide3.3.jpg" alt="Slide 3">
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div class="animated-box-container">
+        <div class="animated-box">
+            <div class="dog-info">
+              <h1 style="text-align: center;">Our Campaign</h1>
+              <p>At Paws for Hope, our mission is to make a difference in the lives of animals by promoting their welfare and well-being. Our campaign represents our ongoing commitment to raise awareness and support for animal rights and rescue efforts. Through education, advocacy, and community outreach, we strive to create a world where every animal is treated with compassion and respect. Join us in our campaign as we work towards a future where all animals are valued and protected members of society. Together, we can make a meaningful difference in the lives of animals in need.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="fade-in footer">
+        <div class="footer-icons">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+        </div>
+        <div class="footer-description">
+        </div>
+        <p>&copy; 2024 Paws of Hope. All rights reserved.</p>
+    </footer>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slide");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex-1].style.display = "block";  
+        }
+    </script>
+</body>
+</html>

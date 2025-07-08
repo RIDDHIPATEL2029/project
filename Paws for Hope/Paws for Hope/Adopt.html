@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws of Hope: Pets for Adoption</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ff8c00;
+            overflow-x: hidden;
+        }
+        .header-container {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        .footer {
+            background-color: #E5E8E8;
+            color: black;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            clear: both;
+        }
+        .footer-icons {
+            margin-top: 20px;
+        }
+        .footer-icons a img {
+            height: 50px;
+        }
+        .footer-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: white;
+        }
+        .footer-icons a:hover {
+            color: skyblue;
+        }
+        .footer-description {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            padding: 10px 0;
+            animation: fadeIn 1s ease;
+            flex-grow: 1;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover {
+            color: skyblue;
+        }
+        .logo img {
+            width: 150px;
+        }
+        .donate-button a {
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .donate-button a:hover {
+            background-color: black;
+        }
+        .pet-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 20px;
+            justify-items: center;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        .pet-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .pet-card:hover {
+            transform: translateY(-5px);
+        }
+        .pet-image {
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            margin: 0 auto 20px;
+            overflow: hidden;
+        }
+        .pet-image img {
+            width: 100%;
+            height: auto;
+        }
+        .pet-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .pet-description {
+            font-size: 16px;
+            color: #555;
+        }
+        .adopt-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .adopt-button:hover {
+            background-color: #45a049;
+        }
+        .quotation {
+            font-size: 36px;
+            margin-top: 50px;
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+            color: #2c3e50;
+            animation: slideIn 2s ease;
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0%);
+                opacity: 1;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .header {
+                flex-direction: column;
+            }
+            .logo img {
+                margin-bottom: 20px;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .pet-card {
+                padding: 10px;
+            }
+            .pet-image {
+                height: 150px;
+                width: 150px;
+            }
+            .pet-name {
+                font-size: 20px;
+            }
+            .pet-description {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <nav class="header">
+            <div class="logo">
+                <img src="images/logo.png" alt="Paws of Hope Logo">
+            </div>
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+                <li><a href="OurCampaign.html">Our Campaign</a></li>
+                <li><a href="Adopt.html">Pets for Adoption</a></li>
+                <li><a href="Contactus.html">Contact Us</a></li>
+                <li class="donate-button"><a href="Donatepage.html">Donate Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="quotation">"Saving one animal won't change the world, but for that one animal, the world will change forever."</div>
+    <div class="pet-grid">
+        <div class="pet-card">
+            <div class="pet-image">
+                <img src="images/Fluffy.jpg" alt="Fluffy">
+            </div>
+            <div class="pet-name">Fluffy</div>
+            <div class="pet-description">Fluffy is a friendly and playful cat looking for a loving home. She enjoys cuddling and playing with toys.</div>
+            <button class="adopt-button" onclick="window.location.href='images/error.jpg';">Adopt Me</button>
+        </div>
+        <div class="pet-card">
+            <div class="pet-image">
+                <img src="images/Buddy.jpg" alt="Buddy">
+            </div>
+            <div class="pet-name">Buddy</div>
+            <div class="pet-description">Buddy is a loyal and energetic dog who loves going for walks and playing fetch. He's great with kids and other pets.</div>
+            <button class="adopt-button" onclick="window.location.href='images/error.jpg';">Adopt Me</button>
+        </div>
+        <div class="pet-card">
+            <div class="pet-image">
+                <img src="images/Luna.jpg" alt="Luna">
+            </div>
+            <div class="pet-name">Luna</div>
+            <div class="pet-description">Luna is an elegant and independent cat who enjoys lounging in sunny spots and exploring her surroundings.</div>
+            <button class="adopt-button" onclick="window.location.href='images/error.jpg';">Adopt Me</button>
+        </div>
+        <div class="pet-card">
+            <div class="pet-image">
+                <img src="images/Charlie.jpg" alt="Charlie">
+            </div>
+            <div class="pet-name">Charlie</div>
+            <div class="pet-description">Charlie is a playful and affectionate dog who loves long walks in the park and belly rubs.</div>
+            <button class="adopt-button" onclick="window.location.href='images/error.jpg';">Adopt Me</button>
+        </div>
+        <div class="pet-card">
+            <div class="pet-image">
+                <img src="images/Milo.jpg" alt="Milo">
+            </div>
+            <div class="pet-name">Milo</div>
+            <div class="pet-description">Milo is a curious and friendly cat who enjoys exploring new places and lounging in cozy spots.</div>
+            <button class="adopt-button" onclick="window.location.href='images/error.jpg';">Adopt Me</button>
+        </div>
+        <div class="pet-card">
+            <div class="pet-image">
+                <img src="images/Bella.jpg" alt="Bella">
+            </div>
+            <div class="pet-name">Bella</div>
+            <div class="pet-description">Bella is a gentle and loving dog who adores cuddling on the couch and playing with her favorite toys.</div>
+            <button class="adopt-button" onclick="window.location.href='images/error.jpg';">Adopt Me</button>
+        </div>
+    </div>
+
+    <footer class="fade-in footer">
+        <div class="footer-icons">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+        </div>
+        <div class="footer-description">
+        </div>
+        <p>&copy; 2024 Paws of Hope. All rights reserved.</p>
+    </footer>
+
+    <script>
+    </script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws of Hope - Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ff8c00;
+            overflow-x: hidden;
+        }
+        .header-container {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        .footer {
+            background-color: #E5E8E8;
+            color: black;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            clear: both;
+        }
+        .footer-icons {
+            margin-top: 20px;
+        }
+        .footer-icons a img {
+            height: 50px;
+        }
+        .footer-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: white;
+        }
+        .footer-icons a:hover {
+            color: skyblue;
+        }
+        .footer-description {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            padding: 10px 0;
+            animation: fadeIn 1s ease;
+            flex-grow: 1;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover {
+            color: skyblue;
+        }
+        .logo img {
+            width: 150px;
+        }
+        .donate-button a {
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .donate-button a:hover {
+            background-color: black;
+        }
+        .contact-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form input[type="tel"],
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .contact-form textarea {
+            height: 150px;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .header {
+                flex-direction: column;
+            }
+            .logo img {
+                margin-bottom: 20px;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .contact-container {
+                margin: 20px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <nav class="header">
+            <div class="logo">
+                <img src="images/logo.png" alt="Paws of Hope Logo">
+            </div>
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+                <li><a href="OurCampaign.html">Our Campaign</a></li>
+                <li><a href="Adopt.html">Pets for Adoption</a></li>
+                <li><a href="Contactus.html">Contact Us</a></li>
+                <li class="donate-button"><a href="Donatepage.html">Donate Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-container">
+        <h1>Contact Us:</h1>
+        <p>Please fill the form below to send us any queries that you might have.</p>
+        <form class="contact-form" action="#" method="post">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Bob..." required>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Alice..." required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="someone@somewhere.com" required>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="07XXXXXXXX" required>
+            <label for="dob">Date of Birth:</label>
+            <input type="text" id="dob" name="dob" placeholder="mm/dd/yyyy" required>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select...</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="contactPreference">Contact:</label>
+            <select id="contactPreference" name="contactPreference" required>
+                <option value="" disabled selected>Select...</option>
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+            </select>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject..." required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Message.." required></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+
+    <footer class="fade-in footer">
+        <div class="footer-icons">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+        </div>
+        <div class="footer-description">
+            
+        </div>
+        <p>&copy; 2024 Paws of Hope. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+</html>

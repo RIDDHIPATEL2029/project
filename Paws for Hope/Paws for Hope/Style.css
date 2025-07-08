@@ -1,0 +1,125 @@
+/* Basic CSS for logo and navigation */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ff8c00;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header-container {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.footer {
+    background-color: #E5E8E8;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    clear: both;
+    margin-top: auto;
+}
+.footer-icons {
+    margin-top: 20px;
+}
+.footer-icons a img {
+    height: 50px;
+}
+.footer-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+}
+.footer-icons a:hover {
+    color: skyblue;
+}
+.footer-description {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* Navigation Styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 10px 0;
+    animation: fadeIn 1s ease;
+    flex-grow: 1;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover {
+    color: skyblue;
+}
+.logo img {
+    width: 150px;
+}
+.donate-button a {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.donate-button a:hover {
+    background-color: black;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+    .logo img {
+        margin-bottom: 20px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}

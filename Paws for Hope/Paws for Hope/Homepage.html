@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws of Hope</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ff8c00;
+        }
+        .header-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            z-index: 999;
+            overflow: hidden;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            padding: 10px 0;
+            animation: fadeIn 1s ease;
+            flex-grow: 1;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover {
+            color: skyblue;
+        }
+        .logo img {
+            width: 150px;
+        }
+        .donate-button a {
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .donate-button a:hover {
+            background-color: black;
+        }
+        .background-image {
+            background-image: url('images/Backgroundimage.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 350px;
+            position: relative;
+            z-index: -1;
+        }
+        .animated-text {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 48px;
+            animation: moveLeftToMiddle 5s ease-in-out forwards;
+        }
+        @keyframes moveLeftToMiddle {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .animated-box-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .animated-box {
+            text-align: center;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            animation: fadeInBox 1s ease forwards;
+            width: calc(33.33% - 40px);
+            max-width: 300px;
+            margin-bottom: 50px;
+        }
+        @keyframes fadeInBox {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .dog-info {
+            margin-top: 20px;
+        }
+        .dog-info h2 {
+            color: #333;
+        }
+        .dog-info p {
+            color: #555;
+        }
+        footer {
+            background-color: #E5E8E8;
+            color: black;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+        .footer-icons {
+            margin-top: 20px;
+        }
+        .footer-icons a img {
+            height: 50px;
+        }
+        .footer-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: white;
+        }
+        .footer-icons a:hover {
+            color: skyblue;
+        }
+        .footer-description {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                padding: 10px;
+            }
+            .logo img {
+                margin-bottom: 10px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            .background-image {
+                height: 250px;
+            }
+            .animated-text {
+                font-size: 32px;
+            }
+            .animated-box {
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <nav class="header">
+            <div class="logo">
+                <img src="images/logo.png" alt="Paws of Hope Logo">
+            </div>
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+                <li><a href="Ourcampaign.html">Our Campaign</a></li>
+                <li><a href="Adopt.html">Pets to Adopt</a></li>
+                <li><a href="Contactus.html">Contact Us</a></li>
+                <li class="donate-button"><a href="Donatepage.html">Donate Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="background-image">
+        <div class="animated-text">Welcome to Paws of Hope!</div>
+    </div>
+    <div class="animated-box-container">
+        <div class="animated-box">
+            <img src="images/Animatedbox1.jpg" alt="Animatedbox1 Image" width="300">
+            <div class="dog-info">
+                <h2>Donate Your Pet</h2>
+                <p>Consider donating your pet to Paws of Hope. Your pet will be cared for and given a chance to find a loving home.</p>
+            </div>
+        </div>
+        <div class="animated-box">
+            <img src="images/Animatedbox2.jpg" alt="Animatedbox2 Image" width="300">
+            <div class="dog-info">
+                <h2>Why Donate?</h2>
+                <p>By donating your pet, you're providing them with a chance for a better life. Help us make a difference in the lives of animals.</p>
+            </div>
+        </div>
+        <div class="animated-box">
+            <img src="images/Animatedbox3.jpeg" alt="Animatedbox3 Image" width="300">
+            <div class="dog-info">
+                <h2>How to Donate</h2>
+                <p>Reach out to us through our website or visit Donate Us to learn more about the donation process and how you can help.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="fade-in">
+        <div class="footer-icons">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+        </div>
+        <div class="footer-description">
+            
+        </div>
+        <p>&copy; 2024 Paws of Hope. All rights reserved.</p>
+    </footer>
+</body>
+</html>

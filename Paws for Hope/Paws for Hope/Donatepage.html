@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws of Hope - Donate Us</title>
+    <style>
+        /* Basic CSS for logo and navigation */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ff8c00;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header-container {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        .footer {
+            background-color: #E5E8E8;
+            color: black;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            clear: both;
+            margin-top: auto;
+        }
+        .footer-icons {
+            margin-top: 20px;
+        }
+        .footer-icons a img {
+            height: 50px;
+        }
+        .footer-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: white;
+        }
+        .footer-icons a:hover {
+            color: skyblue;
+        }
+        .footer-description {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        /* Navigation Styles */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            padding: 10px 0;
+            animation: fadeIn 1s ease;
+            flex-grow: 1;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover {
+            color: skyblue;
+        }
+        .logo img {
+            width: 150px;
+        }
+        .donate-button a {
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .donate-button a:hover {
+            background-color: black;
+        }
+
+        /* Donate Us Content Styles */
+        .donate-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease;
+            text-align: center;
+        }
+        .donation-box {
+            border: 2px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .donation-box h2 {
+            margin-bottom: 10px;
+        }
+        .donation-options {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .donation-options button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 0 10px;
+        }
+        .donation-options button:hover {
+            background-color: #45a049;
+        }
+        .credit-card-form {
+            max-width: 400px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .credit-card-form input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .exp-cvv {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .exp-cvv input[type="text"] {
+            width: 48%;
+        }
+        .credit-card-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+        .credit-card-form button:hover {
+            background-color: #45a049;
+        }
+        .selected-amount {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 768px) {
+            .header {
+                flex-direction: column;
+            }
+            .logo img {
+                margin-bottom: 20px;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .donate-container {
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <nav class="header">
+            <div class="logo">
+                <img src="images/logo.png" alt="Paws of Hope Logo">
+            </div>
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+                <li><a href="OurCampaign.html">Our Campaign</a></li>
+                <li><a href="Adopt.html">Pets for Adoption</a></li>
+                <li><a href="Contactus.html">Contact Us</a></li>
+                <li class="donate-button"><a href="donatepage.html">Donate Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="donate-container">
+        <div class="donation-box">
+            <h2>Donate Us</h2>
+            <p>Your donation helps us continue our mission of promoting animal welfare and rescue efforts. Every contribution makes a difference!</p>
+        </div>
+        <div class="donation-options">
+            <button onclick="showAmount(5)">£5</button>
+            <button onclick="showAmount(10)">£10</button>
+            <button onclick="showAmount(20)">£20</button>
+        </div>
+        <div class="selected-amount" id="selectedAmount"></div>
+        <form class="credit-card-form">
+            <input type="text" placeholder="Cardholder Name" required>
+            <input type="text" placeholder="Card Number" required>
+            <div class="exp-cvv">
+                <input type="text" placeholder="MM/YY" required>
+                <input type="text" placeholder="CVV" required>
+            </div>
+            <button type="submit" onclick="window.location.href='images/error.jpg'">Donate Now</button>
+        </form>
+    </div>
+
+    <footer class="fade-in footer">
+        <div class="footer-icons">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+        </div>
+        <div class="footer-description">
+            <!-- Add any additional footer description here -->
+        </div>
+        <p>&copy; 2024 Paws of Hope. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showAmount(amount) {
+            document.getElementById('selectedAmount').innerText = 'Selected Amount: £' + amount;
+        }
+
+        function donate(amount) {
+            // Here you can write JavaScript code to handle the donation process
+            alert('Thank you for your donation of £' + amount + '!');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+a=int(input("enter first number:"))
+b=int(input("enter second number:"))
+print("unary not:",(~a))
+print("bitwise and:",(a&b))
+print("unary not:",(a/b))
+print("unary not:",(a^b))
+print("unary not:",(a>>b))
+print("unary not:",(a<<b))
